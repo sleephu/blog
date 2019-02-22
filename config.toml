@@ -1,17 +1,17 @@
-baseurl = "https://sleephu.github.io"
+baseurl = "https://sleephu.github.io/"
 title = "jyh.im"
 theme = "vec"
 languageCode = "en-us"
 paginate = 10
 disqusShortname = ""
-googleAnalytics = ""
+googleAnalytics = "UA-75736312-2"
 
 [menu]
   # Shown in the side menu.
   [[menu.main]]
     name = "post"
     weight = 0
-    url = "https://sleephu.github.io/post"
+    url = "post"
   [[menu.main]]
     name = "contact"
     weight = 1
@@ -29,7 +29,7 @@ googleAnalytics = ""
   Email = "jingyunhu.cr@gmail.com"
 
   GithubID = "sleephu"
-  TwitterID = "Your Twitter ID"
-  FacebookID = "Your Facebook ID"
+  TwitterID = ""
+  FacebookID = ""
   LinkedInID = "jingyunhu"
-  GoogleplusID = "Your Googleplus ID"
+  GoogleplusID = ""
