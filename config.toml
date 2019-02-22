@@ -1,4 +1,4 @@
-baseurl = "sleephu.github.io"
+baseurl = "https://sleephu.github.io"
 title = "jyh.im"
 theme = "vec"
 languageCode = "en-us"
