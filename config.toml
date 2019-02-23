@@ -1,4 +1,4 @@
-baseurl = "https://sleephu.github.io/"
+baseurl = "https://sleephu.github.io"
 title = "jyh.im"
 theme = "vec"
 languageCode = "en-us"
@@ -11,7 +11,7 @@ googleAnalytics = "UA-75736312-2"
   [[menu.main]]
     name = "post"
     weight = 0
-    url = "post"
+    url = "https://sleephu.github.io/post"
   [[menu.main]]
     name = "contact"
     weight = 1
