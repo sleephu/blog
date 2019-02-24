@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title> Site &middot; jyh.im </title>
+  <title> 如何最快搭建个人网站 &middot; jyh.im </title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -54,7 +54,7 @@
     
     
     <section class="post">
-      <h1 class="post-title"><a href="https://sleephu.github.io/post/site/">Site</a></h1>
+      <h1 class="post-title"><a href="https://sleephu.github.io/post/site/">如何最快搭建个人网站</a></h1>
       <span class="post-date">Feb 23, 2019 </span>
       <div class="post-content">
         
@@ -146,7 +146,8 @@ tree blog
 <pre><code>git submodule add https://themes.gohugo.io/hugo-theme-vec/ themes/vec
 </code></pre>
 
-<h4 id="主题应用">主题应用</h4>
+<h5 id="2-主题应用">2. 主题应用</h5></li>
+</ul>
 
 <p>复制 exampleSite 中 config.toml的</p>
 
@@ -158,19 +159,18 @@ tree blog
 <pre><code>vi config.toml
 </code></pre>
 
-<h4 id="复制examplesite中的文章">复制exampleSite中的文章</h4>
+<p>复制exampleSite中的文章</p>
 
 <pre><code>cp -r themes/vec/exampleSite/content content/
 cp - themes/vec/exampleSite/static static/
 </code></pre>
 
-<h4 id="新建文章">新建文章</h4>
+<p>新建文章</p>
 
 <pre><code>hugo new post/test.md
 </code></pre>
 
-<h4 id="预览">预览</h4></li>
-</ul>
+<h5 id="3-预览">3. 预览</h5>
 
 <p>执行命令，使用 Hugo 生成静态内容并在启动本地 HTTP Server。然后即可访问  <a href="http://localhost/">http://localhost</a>:1313/ 查看效果。</p>
 
@@ -189,19 +189,18 @@ cp - themes/vec/exampleSite/static static/
 - <code>&lt;YOUR-PROJECT&gt;</code> (e.g. <code>blog</code>) (e.g blog) （用于托管所有的Hugo 文件）
 - <code>&lt;USERNAME&gt;</code>.github.io （用于展示Hugo Site, contain the fully rendered version of your Hugo website.）</p>
 
-<p>以下步骤参考 <a href="https://segmentfault.com/a/1190000012975914">reference 1</a> 中 <strong>## 部署到 GitHub Pages</strong>
-1.  先把源码提交到 GitHub 的一个 repo (源码 repo &mdash; blog)</p>
+<p>以下步骤参考 <a href="https://segmentfault.com/a/1190000012975914">reference 1</a> 中 <strong>## 部署到 GitHub Pages</strong></p>
 
-<pre><code>```
-git add -A
+<ol>
+<li><p>先把源码提交到 GitHub 的一个 repo (源码 repo &mdash; blog)</p>
+
+<pre><code>git add -A
 git commint -m &quot;initial hugo files&quot;
 git remote add origin https://github.com/&lt;username&gt;/blog
 git push -u origin master
-```
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>config.toml 的 <code>baseURL</code> 要设置成 <code>https://&lt;username&gt;.github.io</code></li>
+<li><p>config.toml 的 <code>baseURL</code> 要设置成 <code>https://&lt;username&gt;.github.io</code></p></li>
 </ol>
 
 <h3 id="step-3-利用travis-ci自动部署">Step 3: 利用Travis CI自动部署</h3>
@@ -259,9 +258,7 @@ deploy:
 
 <p>其余的参数配置可以根据自己情况调整，比如 <strong>fqdn</strong>， 可以填上个人域名，Travis CI 会自动生成 CNAME 文件，关于如何配置个人域名，可以参考<a href="https://zhuanlan.zhihu.com/p/37752930">这篇文章</a> <strong># 配置个人域名</strong></p>
 
-<ol>
-<li>最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。</li>
-</ol>
+<p>最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。</p>
 
 <h3 id="step-4-博客生成与管理">Step 4: 博客生成与管理</h3>
 
@@ -304,8 +301,9 @@ vi content/post/&lt;filename&gt;.md # 编辑博客
 
 <p>最近会整理一些工作经验的文章，欢迎👏关注我的blog： <a href="http://jyhu.ml/">http://jyhu.ml/</a></p>
 
-<p>## Reference
-喝水不忘挖井人，这里附上一些对我帮助很大的一些参考文章：</p>
+<h2 id="reference">Reference</h2>
+
+<p>喝水不忘挖井人，这里附上一些对我帮助很大的一些参考文章：</p>
 
 <ol>
 <li><a href="https://segmentfault.com/a/1190000012975914">https://segmentfault.com/a/1190000012975914</a></li>

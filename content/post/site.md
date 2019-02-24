@@ -1,5 +1,5 @@
 ---
-title: "Site"
+title: "如何最快搭建个人网站"
 date: 2019-02-23T20:52:19-08:00
 ---
 
@@ -80,7 +80,8 @@ tree blog
     ```
     git submodule add https://themes.gohugo.io/hugo-theme-vec/ themes/vec
     ```
-#### 主题应用
+##### 2. 主题应用
+
 复制 exampleSite 中 config.toml的
 ```
 cp -r themes/vec/exampleSite/config.toml .
@@ -89,16 +90,16 @@ cp -r themes/vec/exampleSite/config.toml .
 ```
 vi config.toml
 ```
-#### 复制exampleSite中的文章
+复制exampleSite中的文章
 ```
 cp -r themes/vec/exampleSite/content content/
 cp - themes/vec/exampleSite/static static/
 ```
-#### 新建文章
+新建文章
 ```
 hugo new post/test.md
 ```
-#### 预览
+##### 3. 预览
 
 执行命令，使用 Hugo 生成静态内容并在启动本地 HTTP Server。然后即可访问  [http://localhost](http://localhost/):1313/ 查看效果。
 
@@ -115,6 +116,7 @@ hugo server -D
 - `<USERNAME>`.github.io （用于展示Hugo Site, contain the fully rendered version of your Hugo website.）
 
 以下步骤参考 [reference 1](https://segmentfault.com/a/1190000012975914) 中 **## 部署到 GitHub Pages**
+
 1.  先把源码提交到 GitHub 的一个 repo (源码 repo --- blog)
     
     ```
@@ -161,7 +163,9 @@ deploy:
     email: <github-email>
     name: <github-username>
 ```
+
 **重点说下这个部分，tutorial里面的**
+
 ```
 script: 
 	 - hugo
@@ -171,9 +175,10 @@ script:
 script:
       hugo
 ```
+
 其余的参数配置可以根据自己情况调整，比如 **fqdn**， 可以填上个人域名，Travis CI 会自动生成 CNAME 文件，关于如何配置个人域名，可以参考[这篇文章](https://zhuanlan.zhihu.com/p/37752930) **# 配置个人域名**
 
-4. 最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。
+最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。
 
 ### Step 4: 博客生成与管理
 为了以后更加方便地生成管理博客，可以写一个script (e.g deploy.sh)，放在blog 根目录：
@@ -212,7 +217,8 @@ sudo sh deploy.sh
 
 最近会整理一些工作经验的文章，欢迎👏关注我的blog： http://jyhu.ml/
 
- ## Reference
+## Reference
+
 喝水不忘挖井人，这里附上一些对我帮助很大的一些参考文章：
 
  1. https://segmentfault.com/a/1190000012975914
