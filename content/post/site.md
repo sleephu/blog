@@ -116,6 +116,7 @@ hugo server -D
 - `<YOUR-PROJECT>` (e.g. `blog`) (e.g blog) （用于托管所有的Hugo 文件）
 - `<USERNAME>`.github.io （用于展示Hugo Site, contain the fully rendered version of your Hugo website.）
 
+#### 部署
 以下步骤参考 [reference 1](https://segmentfault.com/a/1190000012975914) 中 **## 部署到 GitHub Pages**
 
 1.  先把源码提交到 GitHub 的一个 repo (源码 repo --- blog)

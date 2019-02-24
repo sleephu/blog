@@ -4,5 +4,9 @@ title = "FAQ"
 
 如何淡定从容？
 ---
+-  Who am I?
 
-> Feel free to contact me.
+-  Where am I from?
+ 
+- Where am I going?
+
