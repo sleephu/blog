@@ -6,10 +6,26 @@
     <description>Recent content on jyh.im</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Feb 2019 12:22:54 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 Feb 2019 20:52:19 -0800</lastBuildDate>
     
 	<atom:link href="https://sleephu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Site</title>
+      <link>https://sleephu.github.io/post/site/</link>
+      <pubDate>Sat, 23 Feb 2019 20:52:19 -0800</pubDate>
+      
+      <guid>https://sleephu.github.io/post/site/</guid>
+      <description>Hugo + Github Page + Travis Introduction Hugo + Github 搭建免费个人网站
+我搭建个人网站的时候看了很多相关的教程，但是每次（是的，我搭建了很多次）总有各种各样的问题，特别是我很长一段时间不写博客之后，就忘记如何正确部署发布了 (😓)，所以又重新搭建。
+每次搭建都会学到新知识点，这次打算总结一下，造福&amp;hellip;未来的我自己。
+Preparation Github account Hugo download  网上很多tutorial会详细介绍，在这里就不赘述了。
+Fastest way 小白速成：最快，的搭建过程
+以下内容大多数参考这个tutorial， 强烈推荐！
+Step 1: 在本地建一个Hugo Site 并安装主题 安装 环境：macOS
+brew install hugo # 检查安装成功 hugo version  新建site hugo new site blog cd blog git init #Congratulations! Your new Hugo site is created in /Users/sleephu/Dropbox/website/blog. #Just a few more steps and you&#39;re ready to go: # #1.</description>
+    </item>
     
     <item>
       <title>Test</title>
