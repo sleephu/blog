@@ -203,7 +203,7 @@ git push -u origin master
 <li><p>config.toml 的 <code>baseURL</code> 要设置成 <code>https://&lt;username&gt;.github.io</code></p></li>
 </ol>
 
-<h3 id="step-3-利用travis-ci自动部署">Step 3: 利用Travis CI自动部署</h3>
+<h3 id="step-3-利用travis-ci-自动部署">Step 3: 利用Travis CI 自动部署</h3>
 
 <p>利用 Travis CI自动部署，实现了blog repo有改动就会自动部署到 <code>&lt;username&gt;</code>.github.io</p>
 
@@ -212,12 +212,10 @@ git push -u origin master
 <img src="https://image-static.segmentfault.com/327/147/3271470318-5a68537f7c98a" alt="" /></p></li>
 
 <li><p>配置 Travis
-去  <a href="https://travis-ci.org/">Travis CI</a>  注册关联 Github 的账号，然后同步账户并激活 blog repo。
-<img src="https://image-static.segmentfault.com/386/708/3867089403-5a6854a99ac7e" alt="" /></p></li>
+去  <a href="https://travis-ci.org/">Travis CI</a>  注册关联 Github 的账号，然后同步账户并激活 blog repo。<img src="https://image-static.segmentfault.com/386/708/3867089403-5a6854a99ac7e" alt="" /></p></li>
 </ol>
 
-<p>接着进入 blog 的设置页面，选择自动部署触发条件，并把刚刚生成的 GitHub Access Token 添加到环境变量里。
-<img src="https://image-static.segmentfault.com/482/028/482028402-5a6854b6312ef" alt="" /></p>
+<p>接着进入 blog 的设置页面，选择自动部署触发条件，并把刚刚生成的 GitHub Access Token 添加到环境变量里。<img src="https://image-static.segmentfault.com/482/028/482028402-5a6854b6312ef" alt="" /></p>
 
 <ol>
 <li>在 blog repo 中添加 <strong>.travis.yml</strong>（放在blog 根目录）</li>

@@ -127,19 +127,17 @@ hugo server -D
     ```
 2.  config.toml 的 `baseURL` 要设置成 `https://<username>.github.io` 
 
-### Step 3: 利用Travis CI自动部署
+### Step 3: 利用Travis CI 自动部署
 利用 Travis CI自动部署，实现了blog repo有改动就会自动部署到 `<username>`.github.io
 
 1. 生成 [Github Access Token](https://github.com/settings/tokens/new)，至少要有 public_repo 的权限。
 ![](https://image-static.segmentfault.com/327/147/3271470318-5a68537f7c98a)
 
 2. 配置 Travis
-去  [Travis CI](https://travis-ci.org/)  注册关联 Github 的账号，然后同步账户并激活 blog repo。
-![](https://image-static.segmentfault.com/386/708/3867089403-5a6854a99ac7e)
+去  [Travis CI](https://travis-ci.org/)  注册关联 Github 的账号，然后同步账户并激活 blog repo。![](https://image-static.segmentfault.com/386/708/3867089403-5a6854a99ac7e)
 
-接着进入 blog 的设置页面，选择自动部署触发条件，并把刚刚生成的 GitHub Access Token 添加到环境变量里。
-![](https://image-static.segmentfault.com/482/028/482028402-5a6854b6312ef)
- 
+接着进入 blog 的设置页面，选择自动部署触发条件，并把刚刚生成的 GitHub Access Token 添加到环境变量里。![](https://image-static.segmentfault.com/482/028/482028402-5a6854b6312ef)
+
 3. 在 blog repo 中添加 **.travis.yml**（放在blog 根目录）
 
 ```
