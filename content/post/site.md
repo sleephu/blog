@@ -1,6 +1,7 @@
 ---
 title: "如何最快搭建个人网站"
 date: 2019-02-23T20:52:19-08:00
+toc = true
 ---
 
 # Hugo + Github Page + Travis
