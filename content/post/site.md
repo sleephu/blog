@@ -72,7 +72,7 @@ tree blog
 -   可以直接  `clone`  到  `themes`  目录下，优点是如果对主题有调整需求可以同时提交到 git 控制中。
     
     ```
-    git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+    git clone https://themes.gohugo.io/hugo-theme-vec/ themes/vec
     ```
     
 -   也可以添加到 git 的 submodule 中，优点是后面讲到用 travis 自动部署时比较方便。如果需要对主题做更改，最好 fork 主题再做改动。
