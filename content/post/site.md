@@ -130,6 +130,7 @@ hugo server -D
 
 1. 生成 [Github Access Token](https://github.com/settings/tokens/new)，至少要有 public_repo 的权限。
 ![](https://image-static.segmentfault.com/327/147/3271470318-5a68537f7c98a)
+
 2. 配置 Travis
 去  [Travis CI](https://travis-ci.org/)  注册关联 Github 的账号，然后同步账户并激活 blog repo。
 ![](https://image-static.segmentfault.com/386/708/3867089403-5a6854a99ac7e)
@@ -172,7 +173,7 @@ script:
 ```
 其余的参数配置可以根据自己情况调整，比如 **fqdn**， 可以填上个人域名，Travis CI 会自动生成 CNAME 文件，关于如何配置个人域名，可以参考[这篇文章](https://zhuanlan.zhihu.com/p/37752930) **# 配置个人域名**
 
-4.  最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。
+4. 最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。
 
 ### Step 4: 博客生成与管理
 为了以后更加方便地生成管理博客，可以写一个script (e.g deploy.sh)，放在blog 根目录：
@@ -193,15 +194,18 @@ git commit -m "update"
 git push -u origin master
 ```
 以后的博客更新步骤：
+
 1. 写博客 
 ```
 hugo new post/<filename>.md # 新建博客
 vi content/post/<filename>.md # 编辑博客
 ```
+
 2. 部署到 blog repo
 ```
 sudo sh deploy.sh
 ``` 
+
 3. 如果Travis CI部署成功的话，它会自动检测到 blog repo的更新，会把Hugo内容自动部署到真正的网站 `<username>.github.io` 
 
 这样以后只需要专心写blog啦！
@@ -210,6 +214,7 @@ sudo sh deploy.sh
 
  ## Reference
 喝水不忘挖井人，这里附上一些对我帮助很大的一些参考文章：
+
  1. https://segmentfault.com/a/1190000012975914
  2. https://zhuanlan.zhihu.com/p/37752930
  3. https://gohugo.io/hosting-and-deployment/hosting-on-github/ 
