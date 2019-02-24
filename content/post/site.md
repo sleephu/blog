@@ -138,7 +138,9 @@ hugo server -D
 
 接着进入 blog 的设置页面，选择自动部署触发条件，并把刚刚生成的 GitHub Access Token 添加到环境变量里。![](https://image-static.segmentfault.com/482/028/482028402-5a6854b6312ef)
 
-3. 在 blog repo 中添加 **.travis.yml**（放在blog 根目录）
+3. 添加 **.travis.yml** 文件 
+
+在blog repo 中添加 **.travis.yml**（放在blog 根目录）
 
 ```
 sudo: false
@@ -174,7 +176,7 @@ script:
       hugo
 ```
 
-其余的参数配置可以根据自己情况调整，比如 **fqdn**， 可以填上个人域名，Travis CI 会自动生成 CNAME 文件，关于如何配置个人域名，可以参考[这篇文章](https://zhuanlan.zhihu.com/p/37752930) **# 配置个人域名**
+其余的参数配置可以根据自己情况调整，比如 **fqdn**， 可以填上个人域名，Travis CI 会自动生成 CNAME 文件，关于如何配置个人域名，可以参考 [这篇文章](https://zhuanlan.zhihu.com/p/37752930) **# 配置个人域名**
 
 最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。
 
