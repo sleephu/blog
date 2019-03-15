@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sleephu.github.io/lsz/031519/</loc>
+    <lastmod>2019-03-15T00:21:56-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sleephu.github.io/lsz/031419/</loc>
+    <lastmod>2019-03-14T23:13:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sleephu.github.io/post/bigdata3/</loc>
+    <lastmod>2019-02-24T22:06:11-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sleephu.github.io/post/bigdata2/</loc>
+    <lastmod>2019-02-24T21:25:03-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sleephu.github.io/post/bigdata1/</loc>
+    <lastmod>2019-02-24T20:47:03-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sleephu.github.io/post/site/</loc>
     <lastmod>2019-02-23T20:52:19-08:00</lastmod>
   </url>
@@ -69,8 +94,14 @@
   </url>
   
   <url>
+    <loc>https://sleephu.github.io/lsz/</loc>
+    <lastmod>2019-03-15T00:21:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://sleephu.github.io/post/</loc>
-    <lastmod>2019-02-23T20:52:19-08:00</lastmod>
+    <lastmod>2019-02-24T22:06:11-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -106,7 +137,7 @@
   
   <url>
     <loc>https://sleephu.github.io/</loc>
-    <lastmod>2019-02-23T20:52:19-08:00</lastmod>
+    <lastmod>2019-03-15T00:21:56-07:00</lastmod>
     <priority>0</priority>
   </url>
   

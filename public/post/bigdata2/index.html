@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
 <head>
-  <title> Tags &middot; jyh.im </title>
+  <title> hadoop localhost 9000 connection refused &middot; jyh.im </title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -16,12 +16,11 @@
 <link rel="shortcut icon" href="/favicon.ico">
 
 
-<link href="https://sleephu.github.io/tags/index.xml" rel="alternate" type="application/rss+xml" title="jyh.im" />
+<link href="" rel="alternate" type="application/rss+xml" title="jyh.im" />
 
 </head>
 
 <body>
-  
   <header>
   <nav>
     <ul>
@@ -47,49 +46,77 @@
       </li>
       
       
-      <li class="pull-left ">
+      <li class="pull-left current">
         <a href="https://sleephu.github.io/post">~/post</a>
       </li>
       
   
-      <li class="pull-right"><a href="https://sleephu.github.io/tags/index.xml"><i class="fas fa-rss"></i></a></li>
+      <li class="pull-right"><a href=""><i class="fas fa-rss"></i></a></li>
     </ul>
   </nav>
 </header>
-  <div class="content">
-    <section class="posts">
+  <div class="content wide">
+    
+    
+    <section class="post">
+      <h1 class="post-title"><a href="https://sleephu.github.io/post/bigdata2/">hadoop localhost 9000 connection refused</a></h1>
+      <span class="post-date">Feb 24, 2019 </span>
+      <div class="post-content">
+        
+
+<p>debug process:</p>
+
+<pre><code>telnet localhost 9000
+netstat -lpten | grep 9000
+</code></pre>
+
+<p>It did return something, meaning network connection is working fine.</p>
+
+<h3 id="final-reason">Final reason:</h3>
+
+<p><strong>core-site.xml</strong></p>
+
+<pre><code>&lt;configuration&gt;
+
+&lt;property&gt;
+
+&lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
+
+&lt;value&gt;/usr/local/bin/hadoop-2.7.1/tmp&lt;/value&gt;
+
+&lt;/property&gt;
+
+&lt;/configuration&gt;
+</code></pre>
+
+<ol>
+<li>Lack of closed </configuration> tap.</li>
+<li>the tmp directory didn’t exist</li>
+</ol>
+
+<h3 id="summary">Summary:</h3>
+
+<ol>
+<li><p>Check network.</p></li>
+
+<li><p>Check hadoop configuration (hadoop-env.xml/core-site.xml/hdfs-site.xml/mapred-site.xml.tmplate)</p></li>
+
+<li><p>Always close hadoop services, or it will aways get swap file.</p></li>
+</ol>
+
+      </div>
+    </section>
+    
+    <section class="pagination clearfix">
+      
+      <a class="btn previous " href="https://sleephu.github.io/post/bigdata1/"> hadoop Setup Tips </a> 
        
       
-      <div class="posts-archive">
-        
-        <time class="posts-archive-month" datetime="2015-10-01">Oct 2015</time>
-        <ol class="posts-list">
-        
-          <li><a href="https://sleephu.github.io/tags/theme/">Theme</a></li>
-        
-          <li><a href="https://sleephu.github.io/tags/programming/">Programming</a></li>
-        
-          <li><a href="https://sleephu.github.io/tags/hugo/">Hugo</a></li>
-        
-          <li><a href="https://sleephu.github.io/tags/golang/">Golang</a></li>
-        
-        </ol>
-      </div>
-      
-      <div class="posts-archive">
-        
-        <time class="posts-archive-month" datetime="2015-09-01">Sep 2015</time>
-        <ol class="posts-list">
-        
-          <li><a href="https://sleephu.github.io/tags/go/">Go</a></li>
-        
-        </ol>
-      </div>
+      <a class="btn next " href="https://sleephu.github.io/post/bigdata3/"> Simple bash script to import data into MongoDB </a> 
       
     </section>
-    <div class="pagination">
-   
-</div>
+    
+    
   </div>
   
   <footer>
@@ -105,6 +132,10 @@
   </div>
 </footer>
   
+  <script src="https://sleephu.github.io/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
   
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -116,7 +147,6 @@ ga('create', 'UA-75736312-2', 'auto');
 ga('send', 'pageview');
 
 </script>
-
 
 
 </body>

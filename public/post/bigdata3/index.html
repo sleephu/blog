@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
 <head>
-  <title> Tags &middot; jyh.im </title>
+  <title> Simple bash script to import data into MongoDB &middot; jyh.im </title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -16,12 +16,11 @@
 <link rel="shortcut icon" href="/favicon.ico">
 
 
-<link href="https://sleephu.github.io/tags/index.xml" rel="alternate" type="application/rss+xml" title="jyh.im" />
+<link href="" rel="alternate" type="application/rss+xml" title="jyh.im" />
 
 </head>
 
 <body>
-  
   <header>
   <nav>
     <ul>
@@ -47,49 +46,44 @@
       </li>
       
       
-      <li class="pull-left ">
+      <li class="pull-left current">
         <a href="https://sleephu.github.io/post">~/post</a>
       </li>
       
   
-      <li class="pull-right"><a href="https://sleephu.github.io/tags/index.xml"><i class="fas fa-rss"></i></a></li>
+      <li class="pull-right"><a href=""><i class="fas fa-rss"></i></a></li>
     </ul>
   </nav>
 </header>
-  <div class="content">
-    <section class="posts">
+  <div class="content wide">
+    
+    
+    <section class="post">
+      <h1 class="post-title"><a href="https://sleephu.github.io/post/bigdata3/">Simple bash script to import data into MongoDB</a></h1>
+      <span class="post-date">Feb 24, 2019 </span>
+      <div class="post-content">
+        <p><strong>import-data.sh</strong></p>
+
+<pre><code>#! /bin/bash
+
+_dfiles=/Users/computer/Downloads/NYSE/*.csv
+for f in $_dfiles
+do
+mongoimport --type csv -d db -c nyse --headline --file ${f} --jsonArray
+done
+</code></pre>
+
+      </div>
+    </section>
+    
+    <section class="pagination clearfix">
+      
+      <a class="btn previous " href="https://sleephu.github.io/post/bigdata2/"> hadoop localhost 9000 connection refused </a> 
        
       
-      <div class="posts-archive">
-        
-        <time class="posts-archive-month" datetime="2015-10-01">Oct 2015</time>
-        <ol class="posts-list">
-        
-          <li><a href="https://sleephu.github.io/tags/theme/">Theme</a></li>
-        
-          <li><a href="https://sleephu.github.io/tags/programming/">Programming</a></li>
-        
-          <li><a href="https://sleephu.github.io/tags/hugo/">Hugo</a></li>
-        
-          <li><a href="https://sleephu.github.io/tags/golang/">Golang</a></li>
-        
-        </ol>
-      </div>
-      
-      <div class="posts-archive">
-        
-        <time class="posts-archive-month" datetime="2015-09-01">Sep 2015</time>
-        <ol class="posts-list">
-        
-          <li><a href="https://sleephu.github.io/tags/go/">Go</a></li>
-        
-        </ol>
-      </div>
-      
     </section>
-    <div class="pagination">
-   
-</div>
+    
+    
   </div>
   
   <footer>
@@ -105,6 +99,10 @@
   </div>
 </footer>
   
+  <script src="https://sleephu.github.io/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
   
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -116,7 +114,6 @@ ga('create', 'UA-75736312-2', 'auto');
 ga('send', 'pageview');
 
 </script>
-
 
 
 </body>

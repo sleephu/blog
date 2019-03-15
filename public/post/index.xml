@@ -6,10 +6,48 @@
     <description>Recent content in Posts on jyh.im</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Feb 2019 20:52:19 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Feb 2019 22:06:11 -0800</lastBuildDate>
     
 	<atom:link href="https://sleephu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Simple bash script to import data into MongoDB</title>
+      <link>https://sleephu.github.io/post/bigdata3/</link>
+      <pubDate>Sun, 24 Feb 2019 22:06:11 -0800</pubDate>
+      
+      <guid>https://sleephu.github.io/post/bigdata3/</guid>
+      <description>import-data.sh
+#! /bin/bash _dfiles=/Users/computer/Downloads/NYSE/*.csv for f in $_dfiles do mongoimport --type csv -d db -c nyse --headline --file ${f} --jsonArray done  </description>
+    </item>
+    
+    <item>
+      <title>hadoop localhost 9000 connection refused</title>
+      <link>https://sleephu.github.io/post/bigdata2/</link>
+      <pubDate>Sun, 24 Feb 2019 21:25:03 -0800</pubDate>
+      
+      <guid>https://sleephu.github.io/post/bigdata2/</guid>
+      <description> debug process:
+telnet localhost 9000 netstat -lpten | grep 9000  It did return something, meaning network connection is working fine.
+Final reason: core-site.xml
+&amp;lt;configuration&amp;gt; &amp;lt;property&amp;gt; &amp;lt;name&amp;gt;hadoop.tmp.dir&amp;lt;/name&amp;gt; &amp;lt;value&amp;gt;/usr/local/bin/hadoop-2.7.1/tmp&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;/configuration&amp;gt;   Lack of closed  tap. the tmp directory didn’t exist  Summary:  Check network.
+ Check hadoop configuration (hadoop-env.xml/core-site.xml/hdfs-site.xml/mapred-site.xml.tmplate)
+ Always close hadoop services, or it will aways get swap file.
+  </description>
+    </item>
+    
+    <item>
+      <title>hadoop Setup Tips</title>
+      <link>https://sleephu.github.io/post/bigdata1/</link>
+      <pubDate>Sun, 24 Feb 2019 20:47:03 -0800</pubDate>
+      
+      <guid>https://sleephu.github.io/post/bigdata1/</guid>
+      <description>How to Set Up Hadoop Home to use hadoop command directly:
+vim ~/.profile export HADOOP_HOME=/usr/local/bin/hadoop-2.7.1; export PATH=$PATH:${HADOOP_HOME}/bin;  alias hstart=&amp;quot;/usr/local/bin/hadoop-2.7.1/sbin/start-dfs.sh;/usr/local/bin/hadoop-2.7.1/sbin/start-yarn.sh&amp;quot;; alias hstop=&amp;quot;/usr/local/bin/hadoop-2.7.1/sbin/stop-yarn.sh;/usr/local/bin/hadoop-2.7.1/sbin/stop-dfs.sh&amp;quot;;  Why have to source ~/.profile every time?
+Since ~/.bash_profile exists.
+Solution:
+echo &amp;quot;source ~/.profile&amp;quot; &amp;gt;&amp;gt; .bash_profile</description>
+    </item>
     
     <item>
       <title>如何最快搭建个人网站</title>

@@ -6,10 +6,88 @@
     <description>Recent content on jyh.im</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Feb 2019 20:52:19 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 00:21:56 -0700</lastBuildDate>
     
 	<atom:link href="https://sleephu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>港剧迷福音</title>
+      <link>https://sleephu.github.io/lsz/031519/</link>
+      <pubDate>Fri, 15 Mar 2019 00:21:56 -0700</pubDate>
+      
+      <guid>https://sleephu.github.io/lsz/031519/</guid>
+      <description>最近发现一个超级厉害的应用：RSS Player
+这个应用可以收看我最爱的港剧，好开心，在各台设备上都装上了 @_@
+教程很多地方都有，很简单：
+1.IOS/Android 下载 “RSS Player”
+2.进入 &amp;ldquo;RSS Player&amp;rdquo; -&amp;gt; Channel: Add
+name: tvb (any name) link: http://allrss.se/dramas
+3.点击 &amp;ldquo;RSS Player&amp;rdquo; -&amp;gt; Home, 点击刚刚创建的这个channel (e.g tvb)
+搞定！</description>
+    </item>
+    
+    <item>
+      <title>序 - 与自己的对话</title>
+      <link>https://sleephu.github.io/lsz/031419/</link>
+      <pubDate>Thu, 14 Mar 2019 23:13:22 -0700</pubDate>
+      
+      <guid>https://sleephu.github.io/lsz/031419/</guid>
+      <description>人生哲学 - 催眠自己  担心害怕的时候：a. 这件事情最差结果是什么？b. 人的结局啊都是死亡，什么名利，感情，死了还剩什么，有什么事情真的很重要呢？【终极秘诀】
+ 伤心难过的时候：不要把自己当一回事，你一点都不重要，对任何人来说都是，包括父母，伴侣，etc., 只能靠自己。
+ 觉得自己没用的时候：又怎么样呢？最好能有多好，最差又能多差呢？接受平庸的自己，睡个觉就好了。
+  在知乎上看到一句话：
+一定要明白，自己所做的一切都是为了追寻一种状态，一种自我的满足感和幸福感.不要害怕什么，这世上可供害怕的事太多了，你是害怕不完的。有事情，就解决，不能解决，那就拉倒。
+对啊，拉倒吧。
+╬═☆## Ьúそúǎī樂dē呲栶 壹. 總覺鍀壹蕗よ禇βч被妣dēっ⑺姑八め夷，χúē騽時糇縋裘χúē騽峸績，椡壹锭哖jī钌擔芯&amp;gt;父母被λ鎵讠兑⑶道㈣，所以銨Ьú蹴班地祛做钌彵ィ门期鴏卧做dē事鯖っ“ィ┼厸哖jī蹴yīňɡ姟做ィ┼&amp;gt;厸事” - 這ч卧朂厭噁dē壹呴話っ亱ч卧祛做钌，匜鯾峸钌冄魢討厭dē様吇っ
+贰. 冄卧悲觀鯖χúっ敏ɡǎňzんú觀，總覺鍀牁以透過哯象Ьēň質，没又ィ┼厸謓芯λ，亱ч卧冄魢&amp;gt;苻絀钌ロ马？λ禾ロλ之閒，娸實禇βч基於利益鉸換吧，ɡǎň鯖，ч鯁奢侈dē東硒啊っ
+ㄝ孑彧禇Ьúㄝ孑？ 壹. 没又慾朢：對ィ┼厸禇βЬú襘よ癮，没又ィ┼厸ч壹锭要dē東硒，ィ┼厸禇β蕪所謂【這ч壹嗰詪&amp;gt;恐怖dē騽慣，匜ч獃zǎī舒適區dē根源，栶ゐ没又ㄊか朸祛縋裘】
+贰. 接綬：妥協？んúǎňч覺鍀蕪所謂，祗要Ьú鬺及冄噂，詪容昜祛妥協壹些精神χú裘っルo
+正能量  勇敢一点，要面对。不要害怕，你比自己想象中强大。
+ 物极必反。最差的情况最好啊，让暴风雨来得更猛烈些吧！【信念】
+ 只要我想，我一定能。
+ 不要怕麻烦，人在江湖飘哪能不挨刀，还是要面对。
+ 选择了就不要抱怨，不管是不是考虑到别人做的决定，决定最终都是自己下的，自己要承担。
+  以前心情不好了会写一些东西发泄，后来是心情不好想写一些东西发泄又想想算了，现在开始做一个实验吧：开始记一些事情，只记录不是不开心的事情，就算心情非常不好也要找到当天不是不开心的事情记下来。心境会不会慢慢变好呢？</description>
+    </item>
+    
+    <item>
+      <title>Simple bash script to import data into MongoDB</title>
+      <link>https://sleephu.github.io/post/bigdata3/</link>
+      <pubDate>Sun, 24 Feb 2019 22:06:11 -0800</pubDate>
+      
+      <guid>https://sleephu.github.io/post/bigdata3/</guid>
+      <description>import-data.sh
+#! /bin/bash _dfiles=/Users/computer/Downloads/NYSE/*.csv for f in $_dfiles do mongoimport --type csv -d db -c nyse --headline --file ${f} --jsonArray done  </description>
+    </item>
+    
+    <item>
+      <title>hadoop localhost 9000 connection refused</title>
+      <link>https://sleephu.github.io/post/bigdata2/</link>
+      <pubDate>Sun, 24 Feb 2019 21:25:03 -0800</pubDate>
+      
+      <guid>https://sleephu.github.io/post/bigdata2/</guid>
+      <description> debug process:
+telnet localhost 9000 netstat -lpten | grep 9000  It did return something, meaning network connection is working fine.
+Final reason: core-site.xml
+&amp;lt;configuration&amp;gt; &amp;lt;property&amp;gt; &amp;lt;name&amp;gt;hadoop.tmp.dir&amp;lt;/name&amp;gt; &amp;lt;value&amp;gt;/usr/local/bin/hadoop-2.7.1/tmp&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;/configuration&amp;gt;   Lack of closed  tap. the tmp directory didn’t exist  Summary:  Check network.
+ Check hadoop configuration (hadoop-env.xml/core-site.xml/hdfs-site.xml/mapred-site.xml.tmplate)
+ Always close hadoop services, or it will aways get swap file.
+  </description>
+    </item>
+    
+    <item>
+      <title>hadoop Setup Tips</title>
+      <link>https://sleephu.github.io/post/bigdata1/</link>
+      <pubDate>Sun, 24 Feb 2019 20:47:03 -0800</pubDate>
+      
+      <guid>https://sleephu.github.io/post/bigdata1/</guid>
+      <description>How to Set Up Hadoop Home to use hadoop command directly:
+vim ~/.profile export HADOOP_HOME=/usr/local/bin/hadoop-2.7.1; export PATH=$PATH:${HADOOP_HOME}/bin;  alias hstart=&amp;quot;/usr/local/bin/hadoop-2.7.1/sbin/start-dfs.sh;/usr/local/bin/hadoop-2.7.1/sbin/start-yarn.sh&amp;quot;; alias hstop=&amp;quot;/usr/local/bin/hadoop-2.7.1/sbin/stop-yarn.sh;/usr/local/bin/hadoop-2.7.1/sbin/stop-dfs.sh&amp;quot;;  Why have to source ~/.profile every time?
+Since ~/.bash_profile exists.
+Solution:
+echo &amp;quot;source ~/.profile&amp;quot; &amp;gt;&amp;gt; .bash_profile</description>
+    </item>
     
     <item>
       <title>如何最快搭建个人网站</title>

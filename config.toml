@@ -20,6 +20,10 @@ googleAnalytics = "UA-75736312-2"
     name = "faq"
     weight = 2
     url = "https://sleephu.github.io/faq"
+  [[menu.main]]
+    name = "lsz"
+    weight = 0
+    url = "https://sleephu.github.io/lsz"
 
 [params]
   Keywords = "key, 关键字, キーワード"
