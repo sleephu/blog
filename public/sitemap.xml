@@ -3,18 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sleephu.github.io/lsz/bk/jhen/</loc>
+    <loc>https://sleephu.github.io/bk/jhen/</loc>
     <lastmod>2019-03-25T20:03:56-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sleephu.github.io/lsz/bk/032119/</loc>
+    <loc>https://sleephu.github.io/bk/032119/</loc>
     <lastmod>2019-03-21T22:56:22-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sleephu.github.io/lsz/bk/031919/</loc>
+    <loc>https://sleephu.github.io/bk/031919/</loc>
     <lastmod>2019-03-19T22:40:26-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sleephu.github.io/bk/031619/</loc>
+    <lastmod>2019-03-16T00:31:30-07:00</lastmod>
   </url>
   
   <url>
@@ -23,13 +28,13 @@
   </url>
   
   <url>
-    <loc>https://sleephu.github.io/lsz/bk/031619/</loc>
-    <lastmod>2019-03-16T00:31:30-07:00</lastmod>
+    <loc>https://sleephu.github.io/bk/031519_chi/</loc>
+    <lastmod>2019-03-15T18:52:06-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sleephu.github.io/lsz/bk/031519_chi/</loc>
-    <lastmod>2019-03-15T18:52:06-07:00</lastmod>
+    <loc>https://sleephu.github.io/bk/031519/</loc>
+    <lastmod>2019-03-15T00:21:56-07:00</lastmod>
   </url>
   
   <url>
@@ -38,12 +43,7 @@
   </url>
   
   <url>
-    <loc>https://sleephu.github.io/lsz/bk/031519/</loc>
-    <lastmod>2019-03-15T00:21:56-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sleephu.github.io/lsz/bk/031419/</loc>
+    <loc>https://sleephu.github.io/bk/031419/</loc>
     <lastmod>2019-03-14T23:13:22-07:00</lastmod>
   </url>
   
@@ -98,6 +98,12 @@
   </url>
   
   <url>
+    <loc>https://sleephu.github.io/bk/</loc>
+    <lastmod>2019-03-25T20:03:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://sleephu.github.io/categories/</loc>
     <priority>0</priority>
   </url>
@@ -130,7 +136,7 @@
   
   <url>
     <loc>https://sleephu.github.io/lsz/</loc>
-    <lastmod>2019-03-25T20:03:56-07:00</lastmod>
+    <lastmod>2019-03-16T00:31:30-07:00</lastmod>
     <priority>0</priority>
   </url>
   
