@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sleephu.github.io/lsz/thoughts/</loc>
+    <lastmod>2019-04-02T17:46:28-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sleephu.github.io/bk/jhen/</loc>
     <lastmod>2019-03-25T20:03:56-07:00</lastmod>
   </url>
@@ -136,7 +141,7 @@
   
   <url>
     <loc>https://sleephu.github.io/lsz/</loc>
-    <lastmod>2019-03-16T00:31:30-07:00</lastmod>
+    <lastmod>2019-04-02T17:46:28-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -147,13 +152,13 @@
   </url>
   
   <url>
-    <loc>https://sleephu.github.io/tags/programming/</loc>
+    <loc>https://sleephu.github.io/categories/programming/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sleephu.github.io/categories/programming/</loc>
+    <loc>https://sleephu.github.io/tags/programming/</loc>
     <lastmod>2015-10-02T21:49:20+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -178,7 +183,7 @@
   
   <url>
     <loc>https://sleephu.github.io/</loc>
-    <lastmod>2019-03-25T20:03:56-07:00</lastmod>
+    <lastmod>2019-04-02T17:46:28-07:00</lastmod>
     <priority>0</priority>
   </url>
   
