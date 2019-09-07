@@ -17,9 +17,9 @@ googleAnalytics = "UA-75736312-2"
     weight = 1
     url = "https://sleephu.github.io/contact"
   [[menu.main]]
-    name = "faq"
+    name = "study"
     weight = 2
-    url = "https://sleephu.github.io/faq"
+    url = "https://sleephu.github.io/study"
   [[menu.main]]
     name = "lsz"
     weight = 0
@@ -29,11 +29,8 @@ googleAnalytics = "UA-75736312-2"
   Keywords = "key, 关键字, キーワード"
   Description = "There are some words to describe your site"
   Avatar = "img/avatar.jpg"
-  SelfIntro = "I am born to shine."
+  SelfIntro = "Problem solver, data driven thinker, and self-motivated learner."
   Email = "jingyunhu.cr@gmail.com"
 
   GithubID = "sleephu"
-  TwitterID = ""
-  FacebookID = ""
   LinkedInID = "jingyunhu"
-  GoogleplusID = ""
